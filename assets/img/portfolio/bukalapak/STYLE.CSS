@@ -1,0 +1,146 @@
+/* Reset some default styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and general typography */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    line-height: 1.6;
+}
+
+/* Navbar customization */
+.navbar {
+    padding: 1rem;
+    background-color: #17a2b8;
+}
+
+.navbar a.navbar-brand {
+    color: white;
+    font-size: 1.75rem;
+    font-weight: bold;
+}
+
+.navbar .nav-link {
+    color: white;
+    font-size: 1.1rem;
+}
+
+.navbar .nav-link:hover {
+    color: #f8f9fa;
+}
+
+.navbar-toggler-icon {
+    background-color: white;
+}
+
+/* Banner Section */
+#banner {
+    background-color: #ffffff;
+    padding: 5rem 0;
+}
+
+#banner img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* Product Section */
+section h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    color: #343a40;
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    color: #333;
+    font-weight: 600;
+}
+
+.card-text {
+    color: #777;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.btn-primary {
+    background-color: #17a2b8;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background-color: #138496;
+}
+
+/* Footer */
+footer {
+    background-color: #17a2b8;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 1rem;
+}
+
+/* Responsive Layouts */
+@media (max-width: 768px) {
+    /* Stack the images in the banner */
+    #banner .row {
+        flex-direction: column;
+    }
+
+    /* Adjust product card layout */
+    .card {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    /* Adjust the navbar for small screens */
+    .navbar .navbar-nav {
+        margin-top: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    /* Adjust card image height for smaller screens */
+    .card img {
+        height: 150px;
+    }
+
+    /* Make product titles smaller */
+    .card-title {
+        font-size: 1rem;
+    }
+
+    /* Adjust footer font size */
+    footer {
+        font-size: 0.9rem;
+    }
+}
+
